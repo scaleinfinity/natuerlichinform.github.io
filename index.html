@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natürlich in Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Natürlich in Form</h1>
+        <p>Dein persönlicher Fitness- und Ernährungscoach</p>
+    </header>
+    
+    <section id="kalorienrechner">
+        <h2>Kalorienbedarf berechnen</h2>
+        <label for="gewicht">Gewicht (kg):</label>
+        <input type="number" id="gewicht">
+        <label for="größe">Größe (cm):</label>
+        <input type="number" id="größe">
+        <label for="alter">Alter:</label>
+        <input type="number" id="alter">
+        <label for="aktivität">Aktivitätslevel:</label>
+        <select id="aktivität">
+            <option value="1.2">Wenig Bewegung</option>
+            <option value="1.375">Leichte Aktivität</option>
+            <option value="1.55">Mäßig aktiv</option>
+            <option value="1.725">Sehr aktiv</option>
+            <option value="1.9">Extrem aktiv</option>
+        </select>
+        <button onclick="berechneKalorien()">Berechnen</button>
+        <p id="ergebnis"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
